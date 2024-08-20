@@ -1,10 +1,12 @@
-import { useState, useEffect } from "react";
-import "./App.css";
+import React, { useState, useEffect } from "react";
+import HeroBanner from "./components/HeroBanner";
 
 function App() {
-  return <>
-  <h1>PORTFOLIO</h1>
-  </>;
+  return (
+    <>
+      <HeroBanner />
+    </>
+  );
 }
 
 export default App;
