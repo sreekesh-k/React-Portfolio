@@ -13,6 +13,12 @@ export default {
         popins: "popins",
         roboto: "roboto",
       },
+      dropShadow: {
+        glow: [
+          "-10px 10px 5px #b5a1ff",
+          "10px -10px 5px #5a4da3",
+        ],
+      },
     },
   },
   plugins: [],

@@ -11,7 +11,7 @@ body {
   background-color: #1a1a22;
 }
 .text-border-black {
-  -webkit-text-stroke: 1.2px #2e2e2e ;
+  -webkit-text-stroke: 1.2px #2e2e2e;
 }
 .text-border-white {
   -webkit-text-stroke: 1.2px #f2f4f8;
@@ -30,11 +30,25 @@ body {
 :root[data-theme="light"] {
   color: #2e2e2e;
   background-color: #f2f4f8;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 :root[data-theme="dark"] {
   color: #f2f4f8;
   background-color: #1a1a22;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(-3%);
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    transform: translateY(0%);
+    animation-timing-function: ease-in-out;
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
 }
