@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FaInfoCircle } from "react-icons/fa";
 const gh_token = import.meta.env.REACT_APP_GH_TOKEN;
 
 function Skills({ theme }) {
@@ -64,49 +65,32 @@ function Skills({ theme }) {
 
   return (
     <>
-      <section className="p-5 md:p-10 hidden md:block">
+      <section className="p-5 md:p-10">
         <div className="container p-5 mx-auto flex flex-col items-center">
-          <h1 className="text-4xl md:text-5xl font-popins text-center w-full">
-            MOST USED <span className="text-violet-500">LANGUAGES</span>
+          <h1 className="text-4xl md:text-5xl font-popins">
+            GITHUB <span className="text-violet-500">STATS</span>
           </h1>
-          <div className="flex flex-row gap-4 mt-10 h-80 md:h-96">
+          <p className="gap-2 my-6 text-xs opacity-70 capitalize font-semibold text-justify px-5">
+            <FaInfoCircle className="inline mb-[.2rem] mr-2" />
+            This shows most used languages On my personal{" "}
+            <span className="text-violet-500 uppercase">github</span> profile.
+          </p>
+          <div className="flex flex-row gap-[.3rem] md:gap-4 h-56 md:h-96">
             {Object.keys(langShare).map((language, index) => (
-              <div key={index} className="flex flex-col items-center ">
+              <div
+                key={index}
+                className="flex flex-col items-center h-full justify-end"
+              >
                 <div
-                  className="w-8 md:w-12 rounded-md bar"
+                  className="w-6 md:w-12 xl:w-16 rounded-t-sm md:rounded-t-md shadow-sm"
                   style={{
                     height: `${langShare[language]}%`,
                     maxHeight: "100%",
                     backgroundColor: langColorMap[language].color,
                   }}
                 ></div>
-                <span className="mt-2 text-xs font-semibold">{language}</span>
-                <span className="text-xs font-semibold">
-                  {langColorMap[language].percentage}%
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      <section className="p-5 md:hidden">
-        <div className=" container p-5 mx-auto flex flex-col">
-          <h1 className="text-4xl md:text-5xl font-popins text-center w-full">
-            MOST USED <span className="text-violet-500">LANGUAGES</span>
-          </h1>
-          <div className="flex flex-col gap-2 mt-10">
-            {Object.keys(langShare).map((language, index) => (
-              <div key={index} className="flex items-center">
-                <span className="w-1/4 text-xs font-semibold">{language}</span>
-                <div
-                  className="h-8 md:h-10 rounded-md bar"
-                  style={{
-                    width: `${langShare[language]}%`,
-                    maxWidth: "100%",
-                    backgroundColor: langColorMap[language].color,
-                  }}
-                ></div>
-                <span className="ml-2 text-xs font-semibold">
+                <span className="mt-2 text-[.6rem] xl:text-xs font-semibold">{language}</span>
+                <span className="text-[.5rem] xl:text-xs font-semibold">
                   {langColorMap[language].percentage}%
                 </span>
               </div>

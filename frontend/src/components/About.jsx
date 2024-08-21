@@ -2,8 +2,9 @@ import React from "react";
 
 function About({ theme }) {
   return (
-    <section className="p-5 md:p-10">
-      <article className="container flex flex-col items-center gap-10 mx-auto border shadow-md border-primary-dark rounded-xl md:rounded-full px-4 md:px-0 bg-secondary bg-opacity-10 py-10">
+    <section className="p-5 md:p-10 flex md:flex-row items-center justify-center container mx-auto relative">
+      <span className="hidden md:block bg-secondary h-4 w-[15%] mr-2 rounded-r-full absolute top-1/2 left-0"></span>
+      <article className="flex flex-col items-center gap-10 border shadow-md border-primary-dark rounded-xl md:rounded-2xl xl:rounded-full  px-4 md:px-0 bg-secondary bg-opacity-10 py-10">
         <h1 className="text-4xl md:text-5xl font-popins">
           <span className="text-violet-500">ABOUT</span> ME
         </h1>
@@ -33,6 +34,7 @@ function About({ theme }) {
           </li>
         </p>
       </article>
+      <span className="hidden md:block bg-secondary h-4 w-[15%] mr-2 rounded-l-full absolute top-1/2 right-0"></span>
     </section>
   );
 }
