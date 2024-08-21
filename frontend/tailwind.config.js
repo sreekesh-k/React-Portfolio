@@ -6,7 +6,7 @@ export default {
       colors: {
         "primary-dark": "#0a0e1f",
         main: "#45b3e0",
-        secondary: "#b5a1ff",
+        "secondary": "#b5a1ff",
       },
       fontFamily: {
         popins: "popins",

@@ -27,7 +27,7 @@ body {
 
 :root[data-theme="light"] {
   color: black;
-  background-color: white;
+  background-color: #eaeaff;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 

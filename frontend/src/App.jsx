@@ -8,7 +8,6 @@ function App() {
   const [theme, setTheme] = useState("dark");
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-    console.log(import.meta.env.REACT_APP_GH_TOKEN)
   };
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -40,8 +39,12 @@ function App() {
         </div>
       </nav>
       <HeroBanner theme={theme} />
-      <About theme={theme} />
-      <Skills theme={theme} />
+      <aside>
+        <About theme={theme} />
+      </aside>
+      <main>
+        <Skills theme={theme} />
+      </main>
     </>
   );
 }

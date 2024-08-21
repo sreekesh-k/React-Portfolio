@@ -18,11 +18,11 @@ function HeroBanner({ theme }) {
             </span>
           </h1>
           <h1 className="text-sm md:text-3xl uppercase tracking-widest">
-            i'm a <span className="text-secondary">Fullstack</span> web{" "}
-            <span className="text-secondary">developer</span>
+            i'm a <span className="text-violet-500">Fullstack</span> web{" "}
+            <span className="text-violet-500">developer</span>
           </h1>
         </div>
-        <div className="flex-1 flex items-center justify-center">
+        <div className="flex-1 flex items-center justify-center drop-shadow-2xl">
           <img
             className="object-contain"
             src="/images/profile/profile.png"

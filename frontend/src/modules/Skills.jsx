@@ -89,8 +89,8 @@ function Skills({ theme }) {
                     backgroundColor: langColorMap[language].color,
                   }}
                 ></div>
-                <span className="mt-2 text-[.6rem] xl:text-xs font-semibold">{language}</span>
-                <span className="text-[.5rem] xl:text-xs font-semibold">
+                <span className="mt-2 text-[.5rem] md:text-[.6rem] xl:text-xs font-semibold">{language}</span>
+                <span className="text-[.4rem] md:text-[.5rem] xl:text-xs font-semibold">
                   {langColorMap[language].percentage}%
                 </span>
               </div>
