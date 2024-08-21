@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import HeroBanner from "./components/HeroBanner";
+import HeroBanner from "./modules/HeroBanner";
 import { FaSun, FaMoon } from "react-icons/fa";
-import About from "./components/About";
-import Skills from "./components/Skills";
+import About from "./modules/About";
+import Skills from "./modules/Skills";
 
 function App() {
   const [theme, setTheme] = useState("dark");
