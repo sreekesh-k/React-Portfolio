@@ -3,6 +3,7 @@ import HeroBanner from "./modules/HeroBanner";
 import { FaSun, FaMoon } from "react-icons/fa";
 import About from "./modules/About";
 import Skills from "./modules/Skills";
+import Projects from "./modules/Projects";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -44,6 +45,7 @@ function App() {
       </aside>
       <main>
         <Skills theme={theme} />
+        <Projects theme={theme}/>
       </main>
     </>
   );

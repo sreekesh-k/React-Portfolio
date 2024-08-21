@@ -68,12 +68,27 @@ function Skills({ theme }) {
       <section className="p-5 md:p-10">
         <div className="container p-5 mx-auto flex flex-col items-center">
           <h1 className="text-4xl md:text-5xl font-popins">
-            GITHUB <span className="text-violet-500">STATS</span>
+            <a
+              href="https://github.com/sreekesh-k"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GITHUB{" "}
+            </a>
+            <span className="text-violet-500">STATS</span>
           </h1>
           <p className="gap-2 my-6 text-xs opacity-70 capitalize font-semibold text-justify px-5">
             <FaInfoCircle className="inline mb-[.2rem] mr-2" />
             This shows most used languages On my personal{" "}
-            <span className="text-violet-500 uppercase">github</span> profile.
+            <a
+              href="https://github.com/sreekesh-k"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-violet-500 uppercase"
+            >
+              github
+            </a>{" "}
+            profile.
           </p>
           <div className="flex flex-row gap-[.3rem] md:gap-4 h-56 md:h-96">
             {Object.keys(langShare).map((language, index) => (
@@ -89,7 +104,9 @@ function Skills({ theme }) {
                     backgroundColor: langColorMap[language].color,
                   }}
                 ></div>
-                <span className="mt-2 text-[.5rem] md:text-[.6rem] xl:text-xs font-semibold">{language}</span>
+                <span className="mt-2 text-[.5rem] md:text-[.6rem] xl:text-xs font-semibold">
+                  {language}
+                </span>
                 <span className="text-[.4rem] md:text-[.5rem] xl:text-xs font-semibold">
                   {langColorMap[language].percentage}%
                 </span>

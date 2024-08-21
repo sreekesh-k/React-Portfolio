@@ -7,12 +7,14 @@ body {
 }
 :root {
   @apply relative max-h-screen overflow-y-scroll;
+  color: #f2f4f8;
+  background-color: #1a1a22;
 }
 .text-border-black {
-  -webkit-text-stroke: 1.2px black;
+  -webkit-text-stroke: 1.2px #2e2e2e ;
 }
 .text-border-white {
-  -webkit-text-stroke: 1.2px white;
+  -webkit-text-stroke: 1.2px #f2f4f8;
 }
 
 @font-face {
@@ -26,13 +28,13 @@ body {
 }
 
 :root[data-theme="light"] {
-  color: black;
-  background-color: #eaeaff;
+  color: #2e2e2e;
+  background-color: #f2f4f8;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 :root[data-theme="dark"] {
-  color: white;
+  color: #f2f4f8;
   background-color: #1a1a22;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
