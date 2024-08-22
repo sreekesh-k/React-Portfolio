@@ -1,52 +1,45 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import TechCard from "../components/TechCards";
+import techCardsData from "./techCards.json";
 
 function Portfolio({ theme }) {
+  const [selectedCard, setSelectedCard] = useState("");
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    setSelectedCard(techCardsData.techCards[0]);
+  }, []);
+
+  const showDesc = (index, card) => {
+    setActiveIndex(index);
+    setSelectedCard(card);
+  };
+
   return (
-    <section className="p-5 md:p-10 flex flex-col items-center justify-center container mx-auto relative dura">
+    <section
+      className={`p-5 md:p-10 flex flex-col items-center justify-center container mx-auto relative ${theme}`}
+    >
       <h1 className="text-base md:text-2xl font-popins uppercase text-center text-balance">
         <span className="text-violet-500">Tech Stack</span> Used for Developing
         & deploying this website
       </h1>
       <div className="flex flex-row items-center justify-between sm:justify-around gap-4 w-4/5 mt-10">
-        <TechCard
-          logo="images/tech/react.svg"
-          altText="React"
-          description="React is a JavaScript library for building user interfaces."
-          className="react"
-        />
-        <TechCard
-          logo="images/tech/node.svg"
-          altText="NodeJS"
-          description="Tailwind CSS is a utility-first CSS framework."
-          className="node"
-        />
-        <TechCard
-          logo="images/tech/tailwind.svg"
-          altText="Tailwind CSS"
-          className="docker"
-          description="Tailwind CSS is a utility-first CSS framework."
-        />
-        <TechCard
-          logo="images/tech/mongo.svg"
-          altText="mongoDb"
-          className="mongo"
-          description="Tailwind CSS is a utility-first CSS framework."
-        />
-        <TechCard
-          logo="images/tech/docker.svg"
-          altText="docker"
-          className="docker"
-          description="Tailwind CSS is a utility-first CSS framework."
-        />
+        {techCardsData.techCards.map((card, index) => (
+          <TechCard
+            key={index}
+            logo={card.logo}
+            altText={card.altText}
+            isActive={index === activeIndex}
+            className={card.altText.toLowerCase()}
+            onClick={() => showDesc(index, card)}
+          />
+        ))}
       </div>
-      <div className=" w-11/12 bg-dark bg-opacity-10 rounded-xl p-5">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-          repudiandae amet illum? Cum, repudiandae odit dolore, ea veritatis
-          reiciendis aut deserunt blanditiis modi quisquam tenetur beatae facere
-          vero, nihil unde.
-        </p>
+      <div className="w-11/12 bg-dark bg-opacity-10 rounded-xl p-5">
+        <h1 className=" text-violet-500 text-xl mb-2 uppercase">
+          {selectedCard.altText}
+        </h1>
+        <p className="text-justify">{selectedCard.description}</p>
       </div>
     </section>
   );

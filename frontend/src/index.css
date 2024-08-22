@@ -37,15 +37,18 @@ body {
   background-color: #1a1a22;
 }
 
-.react:hover {
+.react {
   @apply animate-spin;
 }
-.node:hover {
+.node {
   @apply animate-glow;
 }
-.mongo:hover {
+.mongo {
   @apply animate-spinAndBlink;
 }
-.docker:hover {
+.docker {
+  @apply animate-wave;
+}
+.tailwind {
   @apply animate-wave;
 }

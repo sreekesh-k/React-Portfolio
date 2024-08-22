@@ -64,32 +64,17 @@ export default {
           "0%": {
             transform: "translateY(0) translateX(0) rotate(0deg)",
           },
-          "10%": {
-            transform: "translateY(-2%) translateX(-1%) rotate(-2deg)",
-          },
           "20%": {
             transform: "translateY(-5%) translateX(2%) rotate(-5deg)",
-          },
-          "30%": {
-            transform: "translateY(-3%) translateX(4%) rotate(-3deg)",
           },
           "40%": {
             transform: "translateY(0) translateX(6%) rotate(0deg)",
           },
-          "50%": {
-            transform: "translateY(3%) translateX(6%) rotate(3deg)",
-          },
           "60%": {
             transform: "translateY(5%) translateX(4%) rotate(5deg)",
           },
-          "70%": {
-            transform: "translateY(4%) translateX(2%) rotate(4deg)",
-          },
           "80%": {
             transform: "translateY(2%) translateX(-1%) rotate(2deg)",
-          },
-          "90%": {
-            transform: "translateY(1%) translateX(-3%) rotate(1deg)",
           },
           "100%": {
             transform: "translateY(0) translateX(0) rotate(0deg)",
