@@ -6,9 +6,9 @@ function Portfolio({ theme }) {
     <section className="p-5 md:p-10 flex flex-col items-center justify-center container mx-auto relative dura">
       <h1 className="text-base md:text-2xl font-popins uppercase text-center text-balance">
         <span className="text-violet-500">Tech Stack</span> Used for Developing
-        & deploying this website:
+        & deploying this website
       </h1>
-      <div className="flex flex-row items-center justify-center gap-7 sm:gap-10 md:gap-x-14 xl:gap-28 xl:w-4/5 mt-10">
+      <div className="flex flex-row items-center justify-between sm:justify-around gap-4 w-4/5 mt-10">
         <TechCard
           logo="images/tech/react.svg"
           altText="React"

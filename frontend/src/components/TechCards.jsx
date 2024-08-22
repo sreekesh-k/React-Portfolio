@@ -7,7 +7,7 @@ const TechCard = ({ logo, altText, description, className }) => {
         <img
           src={logo}
           alt={altText}
-          className={`object-contain w-8 sm:w-20 aspect-square drop-shadow-md hover:scale-105`}
+          className={`object-contain w-10 sm:w-20 aspect-square drop-shadow-md hover:scale-105`}
         />
       </div>
       <div className="aspect-square h-6"></div>
