@@ -1,7 +1,7 @@
 function HeroBanner({ theme }) {
   return (
-    <header className="px-10 my-12 sm:my-5 xl:my-0 h-[80svh] min-h-[600px] relative overflow-hidden">
-      <div className=" container flex flex-col items-center gap-10 mx-auto xl:flex-row h-full">
+    <header className="px-10 my-12 sm:my-5 xl:my-0 h-[88svh] min-h-[420px] sm:min-h-[78svh] relative overflow-hidden">
+      <div className=" container flex flex-col items-center gap-10 mx-auto md:flex-row h-full">
         <div className="flex flex-col justify-center flex-1 font-popins">
           <h1 className="uppercase mb-3">
             <span
