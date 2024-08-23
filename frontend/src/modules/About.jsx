@@ -18,7 +18,8 @@ function About({ theme }) {
         </h1>
         <p className="flex-1 flex flex-col items-center justify-center font-roboto text-justify gap-5 md:w-2/3">
           <li className="block">
-            I am a dedicated and adaptable student at{" "}
+            I am currently pursuing a Master's degree in Computer Applications
+            at{" "}
             <a
               href="https://rajagiri.edu/"
               target="_blank"
@@ -27,7 +28,15 @@ function About({ theme }) {
             >
               Rajagiri College of Social Sciences
             </a>
-            , Kerala, with a deep passion for continuous learning and a strong
+            , and I'm truly enjoying every moment of it. My journey here has
+            been anything but traditional. Initially, I was on the path to
+            becoming a Chartered Accountant, but along the way, I discovered
+            that my true passion lay elsewhere. As a gamer, I was always
+            intrigued by the technology behind the games I loved. I would spend
+            hours troubleshooting glitches and solving issues, always wondering,
+            "Why won't this game run?" This curiosity led me to dive deeper into
+            computer science, and before long, I was completely hooked. ,
+            Kerala, with a deep passion for continuous learning and a strong
             commitment to fulfilling my responsibilities with excellence. My
             flexibility allows me to navigate diverse tasks and challenges with
             ease, while my intrinsic motivation drives me to consistently pursue
@@ -35,14 +44,23 @@ function About({ theme }) {
             me to think critically and creatively, fueled by a natural curiosity
             to explore and solve complex problems.
           </li>
-          <li className={`${more ? "block" : "hidden"} md:block`}>
-            I'm passionate about web development and creating innovative digital
-            solutions.I thrive on turning ideas into reality through coding and
-            design. With a keen eye for detail and a love for problem-solving,
-            I'm dedicated to crafting user-friendly experiences that leave a
-            lasting impression.{" "}
+          <li
+            className={`${
+              more ? "block transition-all" : "hidden"
+            } md:block `}
+          >
+            Now, I am driven by a desire to learn and explore. Whether it's
+            coding, software development, or computer systems, I am fascinated
+            by how technology can solve real-world problems. My interests span
+            several areas, including Web Development, DevOps, Cloud Computing,
+            and Information Security. Additionally, I am passionate about Game
+            Development and UI/UX Design, as I love how technology can be
+            harnessed to create engaging user experiences and immersive gaming
+            environments. I am excited to see where my skills will take me, and
+            I am constantly seeking opportunities to collaborate with others who
+            share my passion for technology.
             <span className=" text-violet-400">
-              Let's build something amazing together!
+              Let's collaborate and build something amazing together!
             </span>
           </li>
         </p>
