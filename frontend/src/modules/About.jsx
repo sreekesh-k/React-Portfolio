@@ -35,14 +35,7 @@ function About({ theme }) {
             intrigued by the technology behind the games I loved. I would spend
             hours troubleshooting glitches and solving issues, always wondering,
             "Why won't this game run?" This curiosity led me to dive deeper into
-            computer science, and before long, I was completely hooked. ,
-            Kerala, with a deep passion for continuous learning and a strong
-            commitment to fulfilling my responsibilities with excellence. My
-            flexibility allows me to navigate diverse tasks and challenges with
-            ease, while my intrinsic motivation drives me to consistently pursue
-            the best possible outcomes. I thrive in environments that challenge
-            me to think critically and creatively, fueled by a natural curiosity
-            to explore and solve complex problems.
+            computer science, and before long, I was completely hooked.
           </li>
           <li
             className={`${
