@@ -6,7 +6,7 @@ function About({ theme }) {
     setMore(!more);
   };
   return (
-    <section className="p-5 md:p-10 flex md:flex-row items-center justify-center container mx-auto relative">
+    <section className="p-5 md:p-10 flex sm:flex-row items-center justify-center container mx-auto relative">
       <span
         className={`hidden md:block aspect-square w-[5%] mr-2 rounded-full absolute top-[50%] left-0 ${
           theme === "light" ? "bg-dark" : "bg-light"
