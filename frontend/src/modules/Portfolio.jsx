@@ -17,7 +17,7 @@ function Portfolio({ theme }) {
 
   return (
     <section
-      className={`p-5 md:p-10 flex flex-col items-center justify-center container mx-auto relative ${theme}`}
+      className={`p-5 md:p-10 flex flex-col items-center justify-center container mx-auto relative`}
     >
       <h1 className="text-base md:text-2xl font-popins uppercase text-center text-balance">
         <span className="text-violet-500">Tech Stack</span> Used for Developing
@@ -36,7 +36,7 @@ function Portfolio({ theme }) {
         ))}
       </div>
       <div className="w-11/12 bg-dark bg-opacity-10 rounded-xl p-5">
-        <h1 className=" text-violet-500 text-xl mb-2 uppercase">
+        <h1 className=" text-violet-500 md:text-xl mb-2 uppercase font-popins">
           {selectedCard.altText}
         </h1>
         <p className="text-justify">{selectedCard.description}</p>
