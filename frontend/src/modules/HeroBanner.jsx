@@ -4,7 +4,7 @@ import { SiGmail } from "react-icons/si";
 
 function HeroBanner({ theme }) {
   return (
-    <header className="px-5 sm:my-0 md:px-10 h-[88svh] min-h-[420px] relative overflow-hidden">
+    <header className="px-5 md:px-10 h-[88svh] min-h-[720px] relative">
       <div className=" container flex flex-col-reverse items-center gap-2 mx-auto sm:flex-row h-full">
         <div className="relative flex flex-col gap-3 xl:gap-5 w-full items-start justify-start py-5 h-full px-2 sm:justify-center flex-1 font-popins">
           <h1 className="uppercase">
@@ -87,16 +87,16 @@ function HeroBanner({ theme }) {
             </span>
           </a>
         </div>
-        <figure className="flex-[2] sm:flex-1 w-full h-full relative animate-float">
-          <div className="relative w-full h-full react">
+        <figure className="flex-[2] md:flex-1 w-full h-full relative">
+          <div className="relative w-full h-full react animate-spin">
             <div
-              className={`drop-shadow-glow w-[75%] aspect-square absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform rounded-full ${
+              className={`drop-shadow-glow w-11/12 aspect-square absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform rounded-full ${
                 theme === "light" ? " bg-dark" : "bg-light"
               } bg-opacity-[30%]`}
             ></div>
           </div>
           <img
-            className={`absolute left-1/2 top-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2 transform object-contain hover:scale-105 ${
+            className={`absolute left-1/2 top-1/2  -translate-x-1/2 -translate-y-1/2 transform object-contain hover:scale-105 h-full aspect-square ${
               theme === "light" ? "" : ""
             }`}
             src="/images/profile/profile.webp"

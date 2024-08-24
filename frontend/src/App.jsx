@@ -17,14 +17,14 @@ function App() {
 
   return (
     <>
-      <nav className="py-3">
+      <nav className="relative">
         <div className="container p-3 mx-auto">
           <div className="flex">
             <div className="flex-1 font-popins">
               <img
                 src="/images/logos/logo.svg"
                 alt="logo"
-                className={`object-contain h-8 md:h-12 hover:scale-105 ${
+                className={`object-contain h-8 md:h-10 hover:scale-105 ${
                   theme === "light" ? "" : " invert"
                 }`}
               />

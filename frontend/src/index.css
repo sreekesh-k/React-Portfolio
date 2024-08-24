@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 body {
-  @apply scroll-smooth;
+  @apply scroll-smooth overflow-x-hidden;
 }
 :root {
-  @apply relative max-h-screen overflow-y-scroll;
+  @apply relative max-h-screen overflow-x-hidden;
   color: #f2f4f8;
   background-color: #1a1a22;
 }
