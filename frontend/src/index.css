@@ -52,3 +52,85 @@ body {
 .tailwind {
   @apply animate-wave;
 }
+
+.mybtn {
+  position: relative;
+  overflow: hidden;
+}
+
+.mybtn span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #b5a1ff, #5a4da3);
+  animation: animate1 4s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.mybtn span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 3px;
+  background: linear-gradient(to right, #b5a1ff, #5a4da3);
+  animation: animate2 4s linear infinite;
+  animation-delay: 2s;
+}
+@keyframes animate2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.mybtn span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #b5a1ff, #5a4da3);
+  animation: animate3 4s linear infinite;
+}
+
+@keyframes animate3 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.mybtn span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background: linear-gradient(to right, #b5a1ff, #5a4da3);
+  animation: animate4 4s linear infinite;
+  animation-delay: 2s;
+}
+
+@keyframes animate4 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}

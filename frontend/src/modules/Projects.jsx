@@ -32,7 +32,7 @@ function Projects({ theme }) {
           imageSrc="/images/projects/mario.png"
           projectName="Super Mario Clone"
           sourceCodeUrl="https://github.com/sreekesh-k/Super-Mario-Bros-Unity"
-          liveUrl="http://sreekeshkprabhu.me/Super-Mario-Bros-Unity/"
+          liveUrl="https://sreekesh-k.github.io/Super-Mario-Bros-Unity/"
           theme={theme}
         />
       </div>

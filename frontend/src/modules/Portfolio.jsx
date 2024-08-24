@@ -23,7 +23,7 @@ function Portfolio({ theme }) {
         <span className="text-violet-500">Tech Stack</span> Used for Developing
         & deploying this website
       </h1>
-      <div className="flex flex-row items-center justify-between sm:justify-around gap-4 w-4/5 mt-10">
+      <div className="flex flex-row items-center justify-between sm:justify-around w-4/5 mt-10">
         {techCardsData.techCards.map((card, index) => (
           <TechCard
             key={index}
@@ -39,7 +39,7 @@ function Portfolio({ theme }) {
         <h1 className=" text-violet-500 md:text-xl mb-2 uppercase font-popins">
           {selectedCard.altText}
         </h1>
-        <p className="text-justify">{selectedCard.description}</p>
+        <p className="text-justify font-roboto">{selectedCard.description}</p>
       </div>
     </section>
   );
