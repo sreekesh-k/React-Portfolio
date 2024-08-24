@@ -1,28 +1,28 @@
 {
   "techCards": [
     {
-      "logo": "images/tech/react.svg",
+      "logo": "FaReact",
       "altText": "React",
       "description": "Why I Chose React? I got into web development because I loved design and was hooked on JavaScript. Even though I didn’t come from a computer science background, I was really into creating cool, responsive UIs. I started with the basics—HTML, CSS, and JavaScript—and once I got the hang of it, I wanted to build something bigger. That’s when I discovered React. It was like finding the perfect fit for me, especially as a newbie. React’s simplicity, along with its awesome features like state management and hooks, made it super easy to get started. Plus, the React community is huge and super supportive, which made learning a lot smoother.If you’re just starting out in web development, definitely give React a shot. It’s a fantastic tool for building your first projects and leveling up your skills. Trust me, if you love JavaScript and designing UIs, React is where it’s at!"
     },
     {
-      "logo": "images/tech/tailwind.svg",
+      "logo": "SiTailwindcss",
       "altText": "Tailwind CSS",
       "description": "Tailwind CSS caught my eye because I was already into frontend development and pretty good with CSS. If you know CSS, Tailwind is like taking your skills to the next level by a factor of 10,000. It’s a utility-first framework that makes styling super fast and efficient. With Tailwind, you can build custom designs without leaving your HTML, which saves a ton of time. It’s perfect for creating responsive and dynamic layouts quickly, and it really streamlines the design process."
     },
     {
-      "logo": "images/tech/node.svg",
+      "logo": "FaNodeJs",
       "altText": "Node",
       "description": "I started with Node.js to learn backend development from scratch, and it was a game changer. The ability to use JavaScript for both frontend and backend development kept everything consistent. To simplify my backend work, I also learned Express.js, which made handling routing and requests a breeze. If you have experience with PHP, Laravel, or Python, transitioning to Node.js and Express will be pretty smooth. Overall, Node.js has been a great fit for my backend projects and is perfect if you’re into creating powerful server-side applications."
     },
 
     {
-      "logo": "images/tech/mongo.svg",
+      "logo": "SiMongodb",
       "altText": "Mongo DB",
       "description": "I initially chose MongoDB because I wanted my MERN stack to match the real deal, which uses MongoDB instead of MySQL. At first, I wasn’t sold on NoSQL since I loved writing SQL queries. But as I dove deeper into backend development, I saw the benefits of a JSON-style database. MongoDB turned out to be great for handling both small and large datasets with ease. Although I struggled a bit with complex relationships and ended up switching to SQL for a recent project (like managing a college timetable), I still prefer MongoDB for its flexibility and ease of scaling. Just be sure to plan your database choice based on your project's needs—NoSQL is awesome, but SQL has its strengths too!"
     },
     {
-      "logo": "images/tech/docker.svg",
+      "logo": "FaDocker",
       "altText": "Docker",
       "description": "I wanted to dive deeper into web deployment and stumbled upon Docker. Initially, I was just using serverless platforms like Vercel, Render, and Railway, thinking that was all there was to deployment. Then a friend pointed out that I was missing out on real server management and suggested I learn about actual deployments. I got into web servers, client-server communication, protocols, and a bit of web security. It was a lot to take in, but I managed to get the hang of it. When I discovered Docker, I was blown away by how simple and powerful it is. The idea of isolated, scalable containers was a game changer. I even set up a container to serve a website from my laptop! Although it didn’t go as planned due to my lack of experience with Nginx and web servers, I later used the GitHub Student Pack to set up my portfolio on DigitalOcean. And that’s how this site came to be. Docker is awesome, but definitely plan ahead to make the most of it!"
     }
