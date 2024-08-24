@@ -87,7 +87,7 @@ function HeroBanner({ theme }) {
             </span>
           </a>
         </div>
-        <figure className="flex-[2] sm:flex-1 w-full relative animate-float">
+        <figure className="flex-[2] sm:flex-1 w-full h-full relative animate-float">
           <div className="relative w-full h-full react">
             <div
               className={`drop-shadow-glow w-[75%] aspect-square absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform rounded-full ${
@@ -96,7 +96,7 @@ function HeroBanner({ theme }) {
             ></div>
           </div>
           <img
-            className={`absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 transform object-contain hover:scale-105 ${
+            className={`absolute left-1/2 top-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2 transform object-contain hover:scale-105 ${
               theme === "light" ? "" : ""
             }`}
             src="/images/profile/profile.webp"
