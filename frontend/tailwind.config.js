@@ -14,7 +14,7 @@ export default {
         roboto: "roboto",
       },
       dropShadow: {
-        glow: ["-10px 10px 5px #b5a1ff", "10px -10px 5px #5a4da3"],
+        glow: ["-10px 14px 10px #b5a1ff", "20px -5px 10px #5a4da3"],
       },
       keyframes: {
         float: {
