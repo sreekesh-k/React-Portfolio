@@ -1,3 +1,5 @@
+import { ReactTyped } from "react-typed";
+
 function HeroBanner({ theme }) {
   return (
     <header className="px-5 md:px-10 my-12 sm:my-5 xl:my-0 h-[88svh] min-h-[420px] sm:min-h-[78svh] relative overflow-hidden">
@@ -17,9 +19,27 @@ function HeroBanner({ theme }) {
               SREEKESH K PRABHU
             </span>
           </h1>
-          <h1 className="text-sm md:text-2xl xl:text-3xl uppercase tracking-widest">
-            i'm a <span className="text-violet-500">Fullstack</span> web{" "}
-            <span className="text-violet-500">developer</span>
+          <h1 className="text-base md:text-2xl xl:text-3xl uppercase tracking-widest">
+            i'm a{" "}
+            <span className="text-violet-500 uppercase">
+              {" "}
+              <ReactTyped
+                strings={[
+                  "Student",
+                  "Frontend Developer",
+                  "Backend Developer",
+                  "UI/UX Designer",
+                  "Fullstack Developer",
+                  "Software Developer",
+                  "Cloud Enthusiast",
+                  "DevOps Learner",
+                  "Tech Enthusiast",
+                ]}
+                typeSpeed={50}
+                backSpeed={100}
+                loop
+              />
+            </span>
           </h1>
         </div>
         <div className=" flex-[3] md:flex-1 h-full w-full relative animate-float">

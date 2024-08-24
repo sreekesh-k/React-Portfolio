@@ -51,7 +51,7 @@ function About({ theme }) {
             harnessed to create engaging user experiences and immersive gaming
             environments. I am excited to see where my skills will take me, and
             I am constantly seeking opportunities to collaborate with others who
-            share my passion for technology.
+            share my passion for technology.{" "}
             <span className=" text-violet-400">
               Let's collaborate and build something amazing together!
             </span>
