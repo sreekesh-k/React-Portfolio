@@ -42,7 +42,7 @@ function DownloadBtn() {
           </span>
         </button>
         {isDownloaded && <FaCheck size={14} color="#4CAF50" />}
-        <p className="text-[.5rem] font-roboto">20 Downloads</p>
+        {/* <p className="text-[.5rem] font-roboto">20 Downloads</p> */}
       </div>
      
     </>
