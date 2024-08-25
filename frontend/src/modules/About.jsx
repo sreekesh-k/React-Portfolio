@@ -24,6 +24,8 @@ function About({ theme }) {
               href="https://rajagiri.edu/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Rajagiri College Of Social Sciences"
+              title="RCSS"
               className=" text-violet-400"
             >
               Rajagiri College of Social Sciences
@@ -38,9 +40,7 @@ function About({ theme }) {
             computer science, and before long, I was completely hooked.
           </li>
           <li
-            className={`${
-              more ? "block transition-all" : "hidden"
-            } md:block `}
+            className={`${more ? "block transition-all" : "hidden"} md:block `}
           >
             Now, I am driven by a desire to learn and explore. Whether it's
             coding, software development, or computer systems, I am fascinated
@@ -51,10 +51,17 @@ function About({ theme }) {
             harnessed to create engaging user experiences and immersive gaming
             environments. I am excited to see where my skills will take me, and
             I am constantly seeking opportunities to collaborate with others who
-            share my passion for technology.{" "}
-            <span className=" text-violet-400">
+            share my passion for technology. <br />
+            <a
+              href="https://github.com/sreekesh-k"
+              aria-label="Visit Sreekesh's GitHub profile"
+              title="Lets Collaborate"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" text-violet-400"
+            >
               Let's collaborate and build something amazing together!
-            </span>
+            </a>
           </li>
         </p>
         <button
