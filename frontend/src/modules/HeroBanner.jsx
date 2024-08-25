@@ -110,7 +110,7 @@ function HeroBanner({ theme }) {
           </div>
           <DownloadBtn />
         </div>
-        <figure className="flex-1 grid place-items-center relative">
+        <figure className="flex-1 grid place-items-center relative select-none">
           <div className="absolute w-full animate-spin z-[-1]">
             <div
               className={`drop-shadow-glow w-11/12 aspect-square absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform rounded-full ${

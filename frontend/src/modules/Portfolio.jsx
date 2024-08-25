@@ -39,7 +39,7 @@ function Portfolio({ theme }) {
         <h1 className=" text-violet-500 md:text-xl mb-2 uppercase font-popins">
           {selectedCard.altText}
         </h1>
-        <p className="text-justify font-roboto">{selectedCard.description}</p>
+        <p className="text-justify text-pretty font-roboto">{selectedCard.description}</p>
       </div>
     </section>
   );

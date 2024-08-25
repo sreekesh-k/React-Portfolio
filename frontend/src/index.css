@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+	@apply w-3;
+}
+
+
+::-webkit-scrollbar-track {
+	@apply bg-transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+	@apply bg-light;
+	@apply rounded-s-md;
+}
+
 body {
   @apply scroll-smooth overflow-x-hidden;
 }
