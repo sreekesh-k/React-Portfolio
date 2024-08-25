@@ -2,32 +2,12 @@ import { useState, useEffect } from "react";
 import { ReactTyped } from "react-typed";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import Cookies from "js-cookie";
-import { FaCheck } from "react-icons/fa";
+import DownloadBtn from "../components/DownloadBtn";
 
 function HeroBanner({ theme }) {
-  const [isDownloaded, setIsDownloaded] = useState(false);
-
-  useEffect(() => {
-    const downloaded = Cookies.get("resumeDownloaded");
-    if (downloaded) {
-      setIsDownloaded(true);
-    }
-  }, []);
-
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/assets/SreekeshKPrabhuResume.pdf";
-    link.download = "Sreekesh_K_Prabhu_Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    setIsDownloaded(true);
-    Cookies.set("resumeDownloaded", "true", { expires: 1 / 24 });
-  };
   return (
-    <header className="px-5 md:px-10 h-[88svh] min-h-[720px] relative">
-      <div className=" container flex flex-col-reverse items-center gap-2 mx-auto sm:flex-row h-full">
+    <header className="px-5 my-10 md:px-10 relative xl:h-[88svh]">
+      <div className=" container flex flex-col-reverse items-center gap-2 mx-auto md:flex-row h-full">
         <div className="relative flex flex-col gap-3 xl:gap-5 w-full items-start justify-start py-5 h-full px-2 sm:justify-center flex-1 font-popins">
           <h1 className="uppercase">
             <span
@@ -67,7 +47,9 @@ function HeroBanner({ theme }) {
           </h1>
           <div className="relative flex items-start justify-center gap-5 md:gap-10 mt-4">
             <a
-              className="grid place-items-center w-6 md:w-10 aspect-square invert"
+              className={`grid place-items-center w-6 md:w-10 aspect-square ${
+                theme === "light" ? "" : "invert"
+              }`}
               href="https://github.com/sreekesh-k"
               aria-label="Visit Sreekesh's GitHub profile"
               title="GitHub"
@@ -126,39 +108,20 @@ function HeroBanner({ theme }) {
             tech challenges. My curiosity fuels daily discoveries and an endless
             quest for knowledge.
           </div>
-          <div className="flex gap-5 items-center justify-center">
-            <button
-              className={`mybtn tex mb-2 grid h-10 place-items-center text-center ${
-                isDownloaded
-                  ? "opacity-50"
-                  : "hover:scale-105"
-              } px-5 select-none`}
-              onClick={handleDownload}
-              disabled={isDownloaded}
-            >
-              <span> </span>
-              <span> </span>
-              <span> </span>
-              <span> </span>
-              <span class="font-popins text-xs md:text-base uppercase font-medium select-none">
-                {isDownloaded ? "Downloaded" : "Download Resume"}
-              </span>
-            </button>
-            {isDownloaded && <FaCheck size={14} color="#4CAF50" />}
-          </div>
+          <DownloadBtn />
         </div>
-        <figure className="flex-[2] md:flex-1 w-full h-full relative">
-          <div className="relative w-full h-full react animate-spin">
+        <figure className="flex-1 grid place-items-center relative">
+          <div className="absolute w-full animate-spin z-[-1]">
             <div
               className={`drop-shadow-glow w-11/12 aspect-square absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform rounded-full ${
-                theme === "light" ? " bg-dark" : "bg-light"
-              } bg-opacity-[30%]`}
+                theme === "light"
+                  ? " bg-dark bg-opacity-[20%]"
+                  : "bg-light bg-opacity-[30%]"
+              } `}
             ></div>
           </div>
           <img
-            className={`absolute left-1/2 top-1/2  -translate-x-1/2 -translate-y-1/2 transform object-contain h-full aspect-square ${
-              theme === "light" ? "" : ""
-            }`}
+            className={` relative `}
             src="/images/profile/profile.webp"
             alt="Me"
           />
