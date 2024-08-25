@@ -1,15 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const TechCard = require('../models/TechCard'); 
+const techs = require("../controllers/techs")
 
-router.get('/', async (req, res) => {
-  try {
-    const techCards = await TechCard.find(); 
-    res.json(techCards);
-  } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
-});
+router.get('/', techs.getTechs);
 
 
 module.exports = router;
