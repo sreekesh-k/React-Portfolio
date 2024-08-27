@@ -13,7 +13,7 @@ function DownloadBtn() {
 
     try {
       const response = await fetch(
-        `${import.meta.env.REACT_APP_PUBLIC_API}/asdasdasda/`
+        `${import.meta.env.REACT_APP_PUBLIC_API}/resume/`
       );
 
       if (!response.ok) {
