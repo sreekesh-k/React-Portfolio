@@ -44,6 +44,7 @@ function HeroBanner({ theme }) {
             className={` relative `}
             src="/images/profile/profile.webp"
             alt="Me"
+            loading="lazy"
           />
         </figure>
       </div>

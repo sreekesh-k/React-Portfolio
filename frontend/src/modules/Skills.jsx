@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import { FaInfoCircle } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
+
 function Skills({ theme }) {
   const [langShare, setLangShare] = useState({});
   const [langColorMap, setLangColorMap] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  const { ref, inView, entry } = useInView({
+    triggerOnce: true,
+  });
 
   useEffect(() => {
     const fetchData = async () => {
@@ -15,7 +21,6 @@ function Skills({ theme }) {
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");
-          fetchData();
         }
         const data = await response.json();
         setLangShare(data.totalLangShare);
@@ -40,14 +45,14 @@ function Skills({ theme }) {
       setLangShare(JSON.parse(cachedLangShare));
       setLangColorMap(JSON.parse(cachedLangColorMap));
       setLoading(false);
-    } else {
+    } else if (inView) {
       fetchData();
     }
-  }, []);
+  }, [inView]);
 
   if (loading) {
     return (
-      <section className="p-5 md:p-10">
+      <section ref={ref} className="p-5 md:p-10">
         <div className="container p-5 mx-auto flex flex-col items-center">
           <h1 className="text-4xl md:text-5xl font-popins">
             <a
@@ -59,7 +64,7 @@ function Skills({ theme }) {
             </a>
             <span className="text-violet-500">STATS</span>
           </h1>
-          <p className="gap-2 my-6 text-xs opacity-70 capitalize font-semibold text-justify px-5 animate-pulse ">
+          <p className="gap-2 my-6 text-xs opacity-70 capitalize font-semibold text-justify px-5 animate-pulse">
             <FaInfoCircle className="inline mb-[.2rem] mr-2 animate-ping" />
             Loading your GitHub stats...
           </p>
@@ -70,7 +75,7 @@ function Skills({ theme }) {
 
   if (error) {
     return (
-      <section className="p-5 md:p-10">
+      <section ref={ref} className="p-5 md:p-10">
         <div className="container p-5 mx-auto flex flex-col items-center">
           <h1 className="text-4xl md:text-5xl font-popins">
             <a
@@ -82,9 +87,9 @@ function Skills({ theme }) {
             </a>
             <span className="text-violet-500">STATS</span>
           </h1>
-          <p className="gap-2 my-6 text-xs opacity-70 capitalize font-semibold text-justify px-5 ">
-            <FaInfoCircle className="inline mb-[.2rem] mr-2 " />
-            An error occurred: {error} , please try refreshing the page!
+          <p className="gap-2 my-6 text-xs opacity-70 capitalize font-semibold text-justify px-5">
+            <FaInfoCircle className="inline mb-[.2rem] mr-2" />
+            An error occurred: {error}, please try refreshing the page!
           </p>
         </div>
       </section>
@@ -92,7 +97,7 @@ function Skills({ theme }) {
   }
 
   return (
-    <section className="p-5 md:p-10">
+    <section ref={ref} className="p-5 md:p-10">
       <div className="container p-5 mx-auto flex flex-col items-center">
         <h1 className="text-4xl md:text-5xl font-popins">
           <a

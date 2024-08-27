@@ -128,7 +128,7 @@ function Portfolio({ theme }) {
             <h1 className="text-violet-500 md:text-xl mb-2 uppercase font-popins">
               {selectedCard.altText}
             </h1>
-            <p className="text-sm sm:text-base text-justify md:text-pretty font-roboto">
+            <p className="text-[.92rem] sm:text-base text-justify md:text-pretty font-roboto">
               {selectedCard.description ||
                 "Click on the Icon to see the description :)"}
             </p>

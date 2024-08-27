@@ -11,6 +11,7 @@ function Cards({ imageSrc, projectName, sourceCodeUrl, liveUrl, theme }) {
         className={`w-full h-full object-contain transition-transform duration-300 transform group-hover:scale-110 ${
           theme === "light" ? "brightness-100" : "brightness-[70%]"
         }`}
+        loading="lazy"
       />
       <div className="absolute inset-0 bg-light bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-1">
         <h3 className="text-white text-base md:text-xl font-semibold drop-shadow-2xl text-center">
