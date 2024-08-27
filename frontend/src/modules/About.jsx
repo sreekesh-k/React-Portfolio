@@ -26,7 +26,7 @@ function About({ theme }) {
               rel="noopener noreferrer"
               aria-label="Rajagiri College Of Social Sciences"
               title="RCSS"
-              className=" text-violet-400"
+              className=" text-violet-500"
             >
               Rajagiri College of Social Sciences
             </a>
@@ -58,14 +58,14 @@ function About({ theme }) {
               title="Lets Collaborate"
               target="_blank"
               rel="noopener noreferrer"
-              className=" text-violet-400"
+              className=" text-violet-500"
             >
               Let's collaborate and build something amazing together!
             </a>
           </section>
         </p>
         <button
-          className={` md:hidden absolute bottom-3 right-5 text-violet-400`}
+          className={` md:hidden absolute bottom-3 right-5 text-violet-500`}
           onClick={showMore}
         >
           {more ? "show less" : "...more"}
