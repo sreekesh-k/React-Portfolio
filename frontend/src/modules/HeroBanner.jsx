@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import DownloadBtn from "../components/DownloadBtn";
 import Socials from "../components/Socials";
 import Type from "../components/Type";
+import profile from "../assets/profile/profile.webp";
+
 function HeroBanner({ theme }) {
   return (
     <header className="px-5 my-10 md:px-10 relative xl:h-[88svh]">
@@ -42,9 +44,8 @@ function HeroBanner({ theme }) {
           </div>
           <img
             className={` relative `}
-            src="/images/profile/profile.webp"
+            src={profile}
             alt="Me"
-            loading="lazy"
           />
         </figure>
       </div>

@@ -5,7 +5,7 @@ import About from "./modules/About";
 import Skills from "./modules/Skills";
 import Projects from "./modules/Projects";
 import Portfolio from "./modules/Portfolio";
-
+import logo from "./assets/logos/logo.svg";
 function App() {
   const [theme, setTheme] = useState("dark");
   const toggleTheme = () => {
@@ -22,7 +22,7 @@ function App() {
           <div className="flex">
             <div className="flex-1 font-popins">
               <img
-                src="/images/logos/logo.svg"
+                src={logo}
                 alt="logo"
                 className={`object-contain h-8 md:h-10 hover:scale-105 ${
                   theme === "light" ? "" : " invert"
