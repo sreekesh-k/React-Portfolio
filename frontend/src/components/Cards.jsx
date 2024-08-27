@@ -14,17 +14,29 @@ function Cards({ imageSrc, projectName, sourceCodeUrl, liveUrl, theme }) {
         loading="lazy"
       />
       <div className="absolute inset-0 bg-light bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-1">
-        <h3 className="text-white text-base md:text-xl font-semibold drop-shadow-2xl text-center">
+        <span className="text-white text-base md:text-xl font-semibold drop-shadow-2xl text-center">
           {projectName}
-        </h3>
+        </span>
       </div>
       <div className="absolute left-4 bottom-4 opacity-0 group-hover:opacity-100 transition-opacity  bg-dark p-2 rounded-full w-10 h-10 shadow-md">
-        <a href={sourceCodeUrl} target="_blank" rel="noopener noreferrer">
+        <a
+          href={sourceCodeUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View source code"
+          role="button"
+        >
           <FaCode className="w-full h-full" />
         </a>
       </div>
       <div className="absolute right-4 bottom-4 opacity-0 group-hover:opacity-100 transition-opacity bg-dark p-2 rounded-full w-10 h-10 shadow-md">
-        <a href={liveUrl} target="_blank" rel="noopener noreferrer">
+        <a
+          href={liveUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit live site"
+          role="button"
+        >
           <FiArrowRight className="w-full h-full" />
         </a>
       </div>

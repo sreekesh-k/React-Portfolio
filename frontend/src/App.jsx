@@ -31,6 +31,7 @@ function App() {
             </div>
             <div className="flex-1 flex justify-end items-center">
               <button
+                aria-label="Theme"
                 onClick={toggleTheme}
                 className="flex items-end hover:scale-105"
               >

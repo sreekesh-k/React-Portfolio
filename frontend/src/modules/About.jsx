@@ -17,7 +17,7 @@ function About({ theme }) {
           <span className="text-violet-500">ABOUT</span> ME
         </h1>
         <p className="flex-1 flex flex-col items-center justify-center font-roboto text-justify gap-5 md:w-2/3">
-          <li className="block">
+          <section className="block">
             I am currently pursuing a Master's degree in Computer Applications
             at{" "}
             <a
@@ -38,8 +38,8 @@ function About({ theme }) {
             hours troubleshooting glitches and solving issues, always wondering,
             "Why won't this game run?" This curiosity led me to dive deeper into
             computer science, and before long, I was completely hooked.
-          </li>
-          <li
+          </section>
+          <section
             className={`${more ? "block transition-all" : "hidden"} md:block `}
           >
             Now, I am driven by a desire to learn and explore. Whether it's
@@ -62,7 +62,7 @@ function About({ theme }) {
             >
               Let's collaborate and build something amazing together!
             </a>
-          </li>
+          </section>
         </p>
         <button
           className={` md:hidden absolute bottom-3 right-5 text-violet-400`}
