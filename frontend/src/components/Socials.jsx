@@ -3,7 +3,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 function Socials({theme}) {
   return (
-    <div className="relative flex items-start justify-center gap-5 md:gap-10 mt-4">
+    <div className="relative flex items-start justify-center gap-5 md:gap-10">
       <a
         className={`grid place-items-center w-6 md:w-10 aspect-square ${
           theme === "light" ? "" : "invert"

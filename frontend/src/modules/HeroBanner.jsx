@@ -22,11 +22,11 @@ function HeroBanner({ theme }) {
             </span>
           </h1>
           <Type />
-          <div className="text-xs sm:text-sm font-roboto font-medium xl:text-pretty text-justify w-11/12 ">
+          <h3 className="text-xs sm:text-sm font-roboto font-medium xl:text-pretty text-justify w-11/12 ">
             I’m a passionate developer from India, constantly diving into new
             tech challenges. My curiosity fuels daily discoveries and an endless
             quest for knowledge.
-          </div>
+          </h3>
           <Socials theme={theme} />
           <DownloadBtn />
         </div>

@@ -3,7 +3,7 @@ import { ReactTyped } from "react-typed";
 
 function Type() {
   return (
-    <h1 className="text-base md:text-xl xl:text-3xl uppercase tracking-widest">
+    <h2 className="text-base md:text-xl xl:text-3xl uppercase tracking-widest">
       i'm a{" "}
       <span className="text-violet-500 uppercase">
         {" "}
@@ -24,7 +24,7 @@ function Type() {
           loop
         />
       </span>
-    </h1>
+    </h2>
   );
 }
 
