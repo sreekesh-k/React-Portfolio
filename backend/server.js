@@ -21,10 +21,6 @@ connection.once("open", () => {
   console.log("MongoDB database connection established successfully");
 });
 
-app.use(
-  "/css",
-  express.static(path.join(__dirname, "node_modules/github-markdown-css"))
-);
 app.use("/techs", techRouter);
 app.use("/resume", resumeRouter);
 app.use("/github", githubRouter);
