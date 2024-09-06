@@ -66,7 +66,7 @@ function Skills({ theme }) {
           </h1>
           <p className="gap-2 my-6 text-xs opacity-70 capitalize font-semibold text-justify px-5 animate-pulse">
             <FaInfoCircle className="inline mb-[.2rem] mr-2 animate-ping" />
-            Loading your GitHub stats...
+            Loading My GitHub stats...
           </p>
         </div>
       </section>
