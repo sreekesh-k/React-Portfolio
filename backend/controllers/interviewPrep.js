@@ -18,7 +18,7 @@ const getMarkdownFile = async (req, res, fileName) => {
       <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sreekesh K Prabhu - Learnings</title>
+        <title>Sreekesh K Prabhu - Interview Prep Java</title>
         <link rel="icon" type="image/png" href="https://sreekeshkprabhu.me/logos/sreekeshkprabhu.png" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css">
         <style>
@@ -68,20 +68,15 @@ const getMarkdownFile = async (req, res, fileName) => {
   });
 };
 
-const getDnsLearnings = (req, res) => {
-  getMarkdownFile(req, res, "DNS_Setup_Guide.md");
+const getHashCheat = (req, res) => {
+  getMarkdownFile(req, res, "java_hashmap_hashset_cheat_sheet.md");
 };
 
-const getDoLearnings = (req, res) => {
-  getMarkdownFile(req, res, "DigitalOcean_Backend_Setup_Guide.md");
-};
-
-const getSeoLearnings = (req, res) => {
-  getMarkdownFile(req, res, "SEO_Optimization_Guide.md");
+const getStringCheat = (req, res) => {
+  getMarkdownFile(req, res, "java_string_cheat_sheet.md");
 };
 
 module.exports = {
-  getDnsLearnings,
-  getDoLearnings,
-  getSeoLearnings,
+  getStringCheat,
+  getHashCheat,
 };

@@ -7,6 +7,7 @@ const techRouter = require("./routes/techRoutes");
 const resumeRouter = require("./routes/resumeRoutes");
 const githubRouter = require("./routes/githubRoutes");
 const learningsRouter = require("./routes/learningsRoutes");
+const intervirewPrepRouter = require('./routes/interviewPrepRoutes');
 const path = require("path");
 const app = express();
 const port = process.env.PORT || 5000;
@@ -25,6 +26,7 @@ app.use("/techs", techRouter);
 app.use("/resume", resumeRouter);
 app.use("/github", githubRouter);
 app.use("/learnings", learningsRouter);
+app.use("/interviewprep",intervirewPrepRouter);
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
