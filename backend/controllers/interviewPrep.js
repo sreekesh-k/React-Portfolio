@@ -76,7 +76,20 @@ const getStringCheat = (req, res) => {
   getMarkdownFile(req, res, "java_string_cheat_sheet.md");
 };
 
+const getPyFeaturesCheat = (req, res) => {
+  getMarkdownFile(req, res, "Python_Features_Syntax_Examples.md");
+};
+const getPyStringCheat = (req, res) => {
+  getMarkdownFile(req, res, "Python_Strings.md");
+};
+const getPyDsaCheat = (req, res) => {
+  getMarkdownFile(req, res, "Python_Data_Structures_Interview.md");
+};
+
 module.exports = {
   getStringCheat,
   getHashCheat,
+  getPyFeaturesCheat,
+  getPyStringCheat,
+  getPyDsaCheat,
 };
