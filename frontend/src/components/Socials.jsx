@@ -1,6 +1,7 @@
 import React from "react";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+
 function Socials({theme}) {
   return (
     <div className="relative flex items-start justify-center gap-5 md:gap-10">
@@ -58,6 +59,20 @@ function Socials({theme}) {
           className="w-full h-full drop-shadow-md transition-transform duration-300 ease-in-out hover:scale-105"
           color="#C13584"
           alt="Instagram Icon"
+        />
+      </a>
+      <a
+        className="grid place-items-center w-6 md:w-10 aspect-square"
+        href="https://youtube.com/@sreekeshkprabhu"
+        aria-label="Visit Sreekesh's YouTube channel"
+        title="YouTube"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaYoutube
+          className="w-full h-full drop-shadow-md transition-transform duration-300 ease-in-out hover:scale-105"
+          color="#FF0000"
+          alt="YouTube Icon"
         />
       </a>
     </div>
